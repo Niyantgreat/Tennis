@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<title>Tennis Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+p1{
+  font-family: "Playfair Display";
+  font-size: 15px;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+ 
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+      <a href="#250" class="w3-bar-item w3-button w3-mobile">ATP 250</a>
+      <a href="#500" class="w3-bar-item w3-button w3-mobile">ATP 500</a>
+      <a href="#1000" class="w3-bar-item w3-button w3-mobile">ATP Masters 1000</a>
+      <a href="#finals" class="w3-bar-item w3-button w3-mobile">ATP Finals</a>
+      <a href="#gallery" class="w3-bar-item w3-button w3-mobile">Gallery</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+      <a href="atp.html" class="w3-bar-item w3-button w3-mobile">ATP Page</a>
+      <a href="grand_slam.html" class="w3-bar-item w3-button w3-mobile">Grand Slam Page</a>
+      <a href="AITA.html" class="w3-bar-item w3-button w3-mobile">AITA Page</a>
+      <a href="academy.html" class="w3-bar-item w3-button w3-mobile">Tennis Academies Page</a>
+      <a href="india.html" class="w3-bar-item w3-button w3-mobile">Indian Tennis Academies</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="\Images\w3images\atp.png" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Tennis</h1>
+  </div>
+  
+</header>
+
+  
+
+<!-- Page content -->
+
+  
+<div class="w3-content" style="max-width:1100px">
+
+
+  <div class="w3-container w3-padding-64" id="250">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\atp_250.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:80%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">ATP 250</h1><br>
+      
+    </div>
+    <p1>The ATP 250 tournaments are the lowest tier of annual men's tennis tournaments on the main ATP Tour, after the four Grand Slam tournaments, ATP Finals, ATP Tour Masters 1000 tournaments, and ATP 500 tournaments.
+          As of 2020, the series includes 39 tournaments, with 250 ranking points awarded to each singles champion—which accounts for the name 
+          of the series. Draws consist of 28, 32, or 48 for singles and 16 for doubles. It was called ATP world series between 1990-1999.
+        Between 2000-2008 its name changed into ATP international series.Between 2009-2018 its name changed into 2009-2018.And from 2019 till the present its name changed into ATP 250.<p1>
+    </div>
+
+
+  <!-- About Section -->
+  <!-- <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="\Images\w3images\main_tennis_image.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="1200"> 
+     <img src="\Images\w3images\main_tennis_image.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Tennis</h1><br>
+      <h5 class="w3-center">Started in 1873</h5>
+    </div>
+      <p>Tennis is a racket sport that can be played individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court. The player who is unable to return the ball will not gain a point, while the opposite player will.
+        Tennis is an Olympic sport and is played at all levels of society and at all ages. The sport can be played by anyone who can hold a racket, including wheelchair users. The modern game of tennis originated in Birmingham, England, in the late 19th century as lawn tennis.</p>
+  </div> -->
+  
+  <hr>
+  
+  <!-- History Section -->
+  
+  <div class="w3-row w3-padding-64" id="500">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">ATP 500</h1><br>
+           <p1>The ATP 500 tournaments are the fourth highest tier of annual men's tennis tournament after the four Grand Slam tournaments,
+                ATP Finals, and the ATP Tour Masters 1000.The series includes 13 tournaments, with 500 ranking points awarded for the events'
+                 singles champions – which accounts for the name of the series. Tournaments have various draws of 32 and 48 for singles and 
+                 16 and 24 for doubles. It is mandatory for leading players to enter at least four 500 events, including at least one after the
+                  US Open; if they play fewer than four, or fail to play in one after the US Open they get a "zero" score towards their world 
+                  ranking for each one short. Roger Federer holds the record for most singles titles at 24, while Daniel Nestor holds the record
+                   for most doubles titles won with 20.</p1><br>        </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\atp_500.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:80%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- grand slam Section -->
+  <div class="w3-container w3-padding-64" id="1000">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\atp_1000.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:80%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">ATP Masters 1000</h1><br>
+         </div>
+    <p1>The ATP Masters tournaments (previously known as ATP Masters Series) is a series of nine tennis tournaments featuring the 
+        top-ranked players on the ATP Tour. The series is the most prestigious in men's tennis after the four Grand Slams. The series' events are held annually in Europe, North America and Asia since the debut of ATP Tour in 1990.
+        In singles, Novak Djokovic and Rafael Nadal hold the record for the most titles with 36 each since the Masters Series began in 1990.</p1>
+    
+  </div>
+  
+<!-- atp Section -->
+<div class="w3-row w3-padding-64" id="finals">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">ATP finals</h1><br>
+           <p1>The ATP Finals is the second highest tier of annual men's tennis tournaments after the four Grand Slam tournaments. The ATP Finals
+                are the season-ending championships of the ATP Tour and feature the top eight singles players and doubles teams of the 
+                ATP Rankings. The tournament has been one of the popular candidates for the monicker of "the fifth grand slam".
+                 The tournament was first held in 1970, although it was known under a different name. Roger Federer holds the record for the most
+                  singles titles with six, while Peter Fleming and John McEnroe hold the record for the most doubles titles with seven. In the 
+                  current tournament, winners are awarded up to 1500 ranking points; with each round-robin loss, 200 points are deducted from 
+                  that amount.</p1><br>        </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\ATP-Finals.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:140%" >
+    </div>
+  </div>
+
+  <hr>
+
+
+
+<!-- Gallery Section -->
+<div class="w3-row w3-padding-64" id="gallery">
+  <!-- <div class="w3-col l6 w3-padding-large"> -->
+    <h1 class="w3-center">Gallery</h1><br>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 12</div>
+        <img src="\Images\w3images\3.jpg" style="width:100%">
+        <div class="text">Qatar Open(ATP 250)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 12</div>
+        <img src="\Images\w3images\auckland_open.jpg" style="width:100%">
+        <div class="text">Auckland Open(ATP 250)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 12</div>
+        <img src="\Images\w3images\serbia.jpg" style="width:100%">
+        <div class="text">Serbia Open(ATP 250)</div>
+      </div>
+
+     
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="\Images\w3images\barcelona_open.webp" style="width:100%">
+        <div class="text">Barcelona Open(ATP 500)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="\Images\w3images\rotterdam.jpg" style="width:100%">
+        <div class="text">Rotterdham Open(ATP 500)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="\Images\w3images\mexican.jpg" style="width:100%">
+        <div class="text">Mexican Open(ATP 500)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="\Images\w3images\miami.jpg" style="width:100%">
+        <div class="text">Miami Open(ATP masters 1000)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="\Images\w3images\madrid.jpg" style="width:100%">
+        <div class="text">Madrid Open(ATP masters 1000)</div>
+      </div>      
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="\Images\w3images\shangai.jpg" style="width:100%">
+        <div class="text">Shanghai Open(ATP masters 1000)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 12</div>
+        <img src="\Images\w3images\paris.jpg" style="width:100%">
+        <div class="text">Paris Masters(ATP masters 1000)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="\Images\w3images\cincinati.jpg" style="width:100%">
+        <div class="text">Cincinati Masters(ATP masters 1000)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="\Images\w3images\finals.jpg" style="width:100%">
+        <div class="text">ATP finals</div>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+        <span class="dot" onclick="currentSlide(10)"></span> 
+        <span class="dot" onclick="currentSlide(11)"></span> 
+        <span class="dot" onclick="currentSlide(12)"></span> 
+      </div>  
+  
+  </div>
+<hr>
+
+
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <div class="footer">
+    <p>Created By Niyant</p>
+  </div>
+</body>
+</html>

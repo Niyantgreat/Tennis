@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<title>Tennis Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+p1{
+  font-family: "Playfair Display";
+  font-size: 15px;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+  
+<!-- Navbar (sit on top) -->
+<div class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+ 
+  <div class="w3-dropdown-hover w3-mobile">
+    <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+      <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+      <a href="#history" class="w3-bar-item w3-button w3-mobile">History</a>
+      <a href="#talent_series" class="w3-bar-item w3-button w3-mobile">Talent Series</a>
+      <a href="#champion_series" class="w3-bar-item w3-button w3-mobile">Championship Series</a>
+      <a href="#Super_series" class="w3-bar-item w3-button w3-mobile">Super Series</a>
+      <a href="#gallery" class="w3-bar-item w3-button w3-mobile">Gallery</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+      <a href="atp.html" class="w3-bar-item w3-button w3-mobile">ATP Page</a>
+      <a href="grand_slam.html" class="w3-bar-item w3-button w3-mobile">Grand Slam Page</a>
+      <a href="AITA.html" class="w3-bar-item w3-button w3-mobile">AITA Page</a>
+      <a href="academy.html" class="w3-bar-item w3-button w3-mobile">Tennis Academies</a>
+      <a href="india.html" class="w3-bar-item w3-button w3-mobile">Indian Tennis Academies</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="\Images\w3images\main_tennis_image1.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Tennis</h1>
+  </div>
+  
+</header>
+
+  
+
+<!-- Page content -->
+
+  
+<div class="w3-content" style="max-width:1100px">
+
+
+  <div class="w3-container w3-padding-64" id="about">
+    <div class="w3-col l6 w3-padding-large ">
+      <img src="\Images\w3images\AITA.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About AITA</h1><br>
+      
+    <p1>All India Tennis Association is the National Federation for development and promotion of Indian Tennis. It has a very strong
+       and tiered junior tournament & ranking structure and a sound professional tournament structure for Men & Women.All India Tennis
+        Association operates all of the Indian national representative tennis sides, including the India Davis Cup team, 
+        the India Billie Jean King Cup team and youth sides as well. AITA is also responsible for organising and hosting 
+        tennis tournaments within India and scheduling the home international fixtures. 
+      </p1>
+  </div>
+</div>
+
+<hr>
+   
+
+  
+  <!-- History Section -->
+  <div class="w3-row w3-padding-64" id="history">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">History</h1><br>
+      <h4>History of AITA</h4>
+      <p1>Tennis was introduced in India in the 1880s by British Army and Civilian Officers. Soon after, regular tournaments
+         like the 'Punjab Lawn tennis Championship' at Lahore (Now in Pakistan) (1885); 'Bengal Lawn Tennis Championship'
+          at Calcutta (1887) and the All India Tennis Championships at Allahabad in (1910) were organised. Initially the British
+           like TD Berrington and LC Ogbourne won these championships, however slowly Indians started picking up the game.
+            Mohd Saleem of Lahore won the Punjab Championship in 1915 and thereafter consecutively from 1919 to 1926. In 1917
+             NS Iyer lifted the Bengal Championship. In 1919 Mr. Nagu picked up the prestigious singles crown at the All
+              India Tennis Championship at City's Gymkhana Club at Allahabad. Henceforth the Indians started playing the game 
+              with greater distinction.</p1><br>        </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\history_tennis.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+    </div>
+  </div>
+
+  <hr>
+
+ <!-- grand slam Section -->
+ <div class="w3-container w3-padding-64" id="talent_series">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="\Images\w3images\talent_series.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">AITA Tournaments</h1><br>
+      <h5 class="w3-center">Talent Series</h5>
+    </div>
+    <p1>If the Talent series is planned to finish by 7 days, the same must be endorsed by AITA
+        & mentioned on the Tournament Schedule & Fact Sheet.In the qualifying rounds of the talent series the format will be best of 17 games(9 games to win).There are normally 3 qualifying rounds in the talent series.In the final qualifying round the format will be best of three tie break sets.In the main draw matches to the format will be the same as the final qualifying round.The talent series is usually held for seven days.</p1>
+      </div>
+      <hr>
+  
+      <!-- atp Section -->
+      <div class="w3-row w3-padding-64" id="champion_series">
+        <div class="w3-col l6 w3-padding-large">
+          <h1 class="w3-center">Championship Series </h1><br>
+          <h4>Championship Series</h4>
+          <p1>In Champion Series there will be no requirement to send ones entry.There will be 32 kids in the main draw
+            (23 direct,8 quailifiers and 1 special extempt).Sign in for qualifying rounds will be on friday between 12pm
+             and 2pm.Sign in for main draw will be on Sunday between 12pm and 2pm.The format of the main draw in the Championship series
+             and talent series is the same.</p1><br>        </div>
+        
+        <div class="w3-col l6 w3-padding-large">
+          <img src="\Images\w3images\champion_series.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+        </div>
+      </div>
+    
+      <hr>
+
+      <div class="w3-content" style="max-width:1100px">
+
+
+        <div class="w3-container w3-padding-64" id="Super_series">
+          <div class="w3-col l6 w3-padding-large ">
+            <img src="\Images\w3images\Super_series.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:90%">
+          </div>
+      
+          <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Super Series</h1><br>
+            
+          <p1>The only difference in Super Series is that there will be 48 boys(44 direct entry and 4 wild card) and 32 girls.
+              The sign in for qualifying be the same as the championship and Super Series,but there will be no sign in required
+               after main draw.
+            </p1>
+        </div>
+        </div>
+        <hr>
+
+
+<!-- Gallery Section -->
+<div class="w3-row w3-padding-64" id="gallery">
+  <!-- <div class="w3-col l6 w3-padding-large"> -->
+    <h1 class="w3-center">Famous Players of India</h1><br>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 12</div>
+        <img src="\Images\w3images\sania_mirza.jpg" style="width:100%" height="80%">
+        <div class="text">Sania Mirza</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 12</div>
+        <img src="\Images\w3images\leander_paes.jpg" style="width:100%" height="80%">
+        <div class="text">Lender Paes</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 12</div>
+        <img src="\Images\w3images\rohan_bopanna.jpg" style="width:100%" height="80%">
+        <div class="text">Rohan Bopanna</div>
+      </div>
+
+           <div class="mySlides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="\Images\w3images\nagal.jpg" style="width:100%" height="80%">
+        <div class="text">Sumit Nagal</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="\Images\w3images\prajnesh.jpg" style="width:100%" height="80%">
+        <div class="text">Prajnesh Gunneshwaran</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="\Images\w3images\bhambri.jpg" style="width:100%" height="80%">
+        <div class="text">Yuki Bhambri</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="\Images\w3images\sharan.jpg" style="width:100%" height="80%">
+        <div class="text">Divij Sharan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="\Images\w3images\amitraj.jpg" style="width:100%" height="80%">
+        <div class="text">Vijay Amitraj</div>
+      </div>      
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="\Images\w3images\ramanathan.webp" style="width:100%" height="80%">
+        <div class="text">Ramakumar Ramanathan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 12</div>
+        <img src="\Images\w3images\krishnan.jpg" style="width:100%" height="80%">
+        <div class="text">Ramesh Krishnan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="\Images\w3images\ankita.jpg" style="width:100%" height="80%">
+        <div class="text">Ankita Raina</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12/ 12</div>
+        <img src="\Images\w3images\saketh.jpg_large" style="width:100%" height="80%">
+        <div class="text">Saketh Myneni</div>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+        <span class="dot" onclick="currentSlide(10)"></span> 
+        <span class="dot" onclick="currentSlide(11)"></span> 
+        <span class="dot" onclick="currentSlide(12)"></span> 
+      </div>  
+  
+  </div>
+<hr>
+
+
+
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <div class="footer">
+    <p>Created By Niyant</p>
+  </div>
+</body>
+</html>
